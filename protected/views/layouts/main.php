@@ -32,8 +32,15 @@
 				</script>
 
 <div class="wrap">
-	<div class="navigation">
-		<p>Другие проекты <a href="http://fbk.info">Фонда борьбы с коррупцией</a></p>
+	<div class="container">
+		<p>
+			Проекты <a href="http://fbk.info">Фонда борьбы с коррупцией</a>:
+			<a href="http://rospil.info"><img src="rospil-hover.png" alt="РосПил"/></a>
+			<a href="http://rosvybor.org"><img src="rosvybor-hover.png" alt="РосВыборы"/></a>
+			<img src="rosyama-link.png" alt="РосЯма"/>
+			<a href="http://roszhkh.ru"><img src="roszkh-hover.png" alt="РосЖКХ"/></a>
+			<a href="http://mashina.org"><img src="dmp-hover.png" alt="ДМП"/></a>
+		</p>
 	</div>
 
 	<div class="navigation">
