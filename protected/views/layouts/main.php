@@ -36,9 +36,9 @@
 		<p>
 			Проекты <a href="http://fbk.info">Фонда борьбы с коррупцией</a>:
 			<a href="http://rospil.info"><img src="/images/fbk/rospil-hover.png" alt="РосПил"/></a>
-			<a href="http://rosvybor.org"><img src="/images/fbk/rosvybory-hover.png" alt="РосВыборы"/></a>
+			<a href="http://rosvybory.org"><img src="/images/fbk/rosvybory-hover.png" alt="РосВыборы"/></a>
 										<img src="/images/fbk/rosyama-not-a-link.png" alt="РосЯма"/>
-			<a href="http://roszhkh.ru"><img src="/images/fbk/roszhkh-hover.png" alt="РосЖКХ"/></a>
+			<a href="http://roszkh.ru"><img src="/images/fbk/roszhkh-hover.png" alt="РосЖКХ"/></a>
 			<a href="http://mashina.org"><img src="/images/fbk/dmp-hover.png" alt="ДМП"/></a>
 		</p>
 	</div>
