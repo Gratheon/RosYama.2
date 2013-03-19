@@ -32,6 +32,10 @@
 				</script>
 
 <div class="wrap">
+	<div class="container">
+		<p>Другие проекты <a href="http://fbk.info">Фонда борьбы с коррупцией</a></p>
+	</div>
+
 	<div class="navigation">
 
 		<div class="container">
