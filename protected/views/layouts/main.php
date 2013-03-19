@@ -34,62 +34,58 @@
 <div class="wrap">
 <div class="navigation">
 
-		<div class="container">
-			<p>Другие проекты <a href="http://fbk.info">Фонда борьбы с коррупцией</a></p>
-		</div>
-
-		<div class="container">
-			 <?php $this->widget('application.widgets.topmenu.topmenuWidget');?>			 
+	<div class="container">
+		 <?php $this->widget('application.widgets.topmenu.topmenuWidget');?>			 
 			
-			<div class="auth">
-			<?php if(!$this->user->isGuest) : ?>
-					<?php echo CHtml::link('<img src="/images/logout.png" alt="Выйти" />',Array('/site/logout'),Array('title'=>'Выйти')); ?>
-					<div class="name">
-						<p><?php echo CHtml::link($this->user->fullname,Array('/holes/personal')); ?></p><span class="grad"></span>
-					</div>
-				<?php else: ?>
-					<?php echo CHtml::link('Войти',Array('/holes/personal'),Array('title'=>'Войти', 'class'=>'profileBtn')); ?>
-				<? endif; ?>
-					<style type="text/css">
-						.auth .name
-						{
-							width: 150px !important;
-						}
+		<div class="auth">
+		<?php if(!$this->user->isGuest) : ?>
+				<?php echo CHtml::link('<img src="/images/logout.png" alt="Выйти" />',Array('/site/logout'),Array('title'=>'Выйти')); ?>
+				<div class="name">
+					<p><?php echo CHtml::link($this->user->fullname,Array('/holes/personal')); ?></p><span class="grad"></span>
+				</div>
+			<?php else: ?>
+				<?php echo CHtml::link('Войти',Array('/holes/personal'),Array('title'=>'Войти', 'class'=>'profileBtn')); ?>
+			<? endif; ?>
+				<style type="text/css">
+					.auth .name
+					{
+						width: 150px !important;
+					}
 						
-					</style>
+				</style>
 					
-			</div>
-		</div>
-	</div>	
-		<?php echo $content; ?>
-
-	<div class="footer">
-
-		<div class="container">
-		<div class="left_footer">
-			&copy; <a href="http://navalny.ru/" target="_blank">Алексей Навальный</a>, 2011-2012
-			<br /><a href="mailto:rossyama@gmail.com">rossyama@gmail.com</a>
-			<br />
-			<br/>Разработано в <a href="http://pixelsmedia.ru" target="_blank">Pixelsmedia</a>
-			<br/>Powered by <a href="http://www.yiiframework.com/" target="_blank">Yii Framework</a>
-		</div>
-		<div class="center_footer">
-			<?php if($this->beginCache('countHoles', array('duration'=>3600))) { ?>
-			<?php $this->widget('application.widgets.collection.collectionWidget'); ?>			
-			<?php $this->endCache(); } ?>
-
-			<p class="friends">Чиним ямы в <i class="flag-UA"></i> <a href="http://ukryama.com/">Украине</a>, <i class="flag-BY"></i> <a href="http://belyama.by/">Беларуси</a> и <i class="flag-KZ"></i> <a href="http://kazyama.kz/">Казахстане</a></p>
-		</div>
-		<div class="right_footer">
-			<p class="autochmo"><a target="_blank" href="http://autochmo.ru/" title="Доска позора водителей &aring;вточмо">&aring;utochmo</a><br>Доска позора водителей</p>
-			Разработка прототипа и дизайна - <a href="http://greensight.ru">Greensight</a>
-		</div>
-
 		</div>
 	</div>
+</div>	
+	<?php echo $content; ?>
+
+<div class="footer">
+
+	<div class="container">
+	<div class="left_footer">
+		&copy; <a href="http://navalny.ru/" target="_blank">Алексей Навальный</a>, 2011-2012
+		<br /><a href="mailto:rossyama@gmail.com">rossyama@gmail.com</a>
+		<br />
+		<br/>Разработано в <a href="http://pixelsmedia.ru" target="_blank">Pixelsmedia</a>
+		<br/>Powered by <a href="http://www.yiiframework.com/" target="_blank">Yii Framework</a>
+	</div>
+	<div class="center_footer">
+		<?php if($this->beginCache('countHoles', array('duration'=>3600))) { ?>
+		<?php $this->widget('application.widgets.collection.collectionWidget'); ?>			
+		<?php $this->endCache(); } ?>
+
+		<p class="friends">Чиним ямы в <i class="flag-UA"></i> <a href="http://ukryama.com/">Украине</a>, <i class="flag-BY"></i> <a href="http://belyama.by/">Беларуси</a> и <i class="flag-KZ"></i> <a href="http://kazyama.kz/">Казахстане</a></p>
+	</div>
+	<div class="right_footer">
+		<p class="autochmo"><a target="_blank" href="http://autochmo.ru/" title="Доска позора водителей &aring;вточмо">&aring;utochmo</a><br>Доска позора водителей</p>
+		Разработка прототипа и дизайна - <a href="http://greensight.ru">Greensight</a>
+	</div>
+
+	</div>
+</div>
 	
-	<script type="text/javascript">
-                var reformalOptions = {
+<script type="text/javascript">
+	var reformalOptions = {
                         project_id: 43983,
                         project_host: "rosyama.reformal.ru",
                         force_new_window: false,
@@ -104,10 +100,10 @@
                         script.src = 'http://media.reformal.ru/widgets/v1/reformal.js';
                         document.getElementsByTagName('head')[0].appendChild(script);
                 })();
-        </script>
+</script>
                	
 	
-	<script type="text/javascript">
+<script type="text/javascript">
 	  var _gaq = _gaq || [];
 	  _gaq.push(['_setAccount', 'UA-38325056-1']);
 	  _gaq.push(['_trackPageview']);
@@ -118,30 +114,30 @@
 		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 	  })();
 	
-	</script>
-	<? if (!$this->user->isGuest && $flash=$this->user->getFlash('user')):?>
-		<div id="addDiv">
-			<div id="fon">
-			</div>
-			<div id="popupdiv">
-			<?php echo ($flash); ?>			
-				 <span class="filterBtn close">
-					<i class="text">Продолжить</i>
-				 </span>
-			</div>
+</script>
+<? if (!$this->user->isGuest && $flash=$this->user->getFlash('user')):?>
+	<div id="addDiv">
+		<div id="fon">
 		</div>
+		<div id="popupdiv">
+		<?php echo ($flash); ?>			
+			 <span class="filterBtn close">
+				<i class="text">Продолжить</i>
+			 </span>
+		</div>
+	</div>
 		
-		<script type="text/javascript">
-		$(document).ready(function(){				
-			$('.close').click(function(){
-				$('#popupdiv').fadeOut(400);
-				$('#fon').fadeOut(600);
-				$('#addDiv').fadeOut(800);
-			})
+	<script type="text/javascript">
+	$(document).ready(function(){				
+		$('.close').click(function(){
+			$('#popupdiv').fadeOut(400);
+			$('#fon').fadeOut(600);
+			$('#addDiv').fadeOut(800);
 		})
+	})
 	
-		</script>
-	<?endif?>
+	</script>
+<?endif?>
 	
-	</body>
-	</html>
+</body>
+</html>
