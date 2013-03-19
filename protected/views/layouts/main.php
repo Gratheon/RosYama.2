@@ -32,7 +32,7 @@
 				</script>
 
 <div class="wrap">
-	<div class="container">
+	<div class="navigation">
 		<p>Другие проекты <a href="http://fbk.info">Фонда борьбы с коррупцией</a></p>
 	</div>
 
