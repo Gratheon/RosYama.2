@@ -33,49 +33,14 @@
 
 <div class="wrap">
 <div class="navigation">
+
+		<div class="container">
+			<p>Другие проекты <a href="http://fbk.info">Фонда борьбы с коррупцией</a></p>
+		</div>
+
 		<div class="container">
 			 <?php $this->widget('application.widgets.topmenu.topmenuWidget');?>			 
 			
-			<!-- 
-			<div class="search">
-				<form action="/map">
-			<input type="image" name="s" src="/images/search_btn.gif" class="btn" /><input type="text" class="textInput inactive" name="q"  value="Поиск по адресу" />
-	<script type="text/javascript">
-		$(document).ready(function(){
-			var startSearchWidth=$('.search').width();
-			var startSearchInputWidth=$('.search .textInput').width();
-			var time=200;
-			
-							var searchWidth=230;
-				var	searchInputWidth=searchWidth-30;
-				
-										searchInputWidth-=47;
-				searchWidth-=47;
-							if ($.browser.msie && $.browser.version == 9) {
-					searchInputWidth+=5;
-					searchWidth+=5;
-					}
-				$('.search .textInput').click(function(){
-					if ($(this).val()=='Поиск по адресу')
-					{
-						$(this).val('').removeClass('inactive');
-					}
-					$('.search').animate({width:searchWidth},time);
-					$('.search .textInput').animate({width:searchInputWidth},time);
-				})
-				$('.search .textInput').blur(function(){
-					
-					if ($(this).val()=='')
-					{
-						$(this).val('Поиск по адресу').addClass('inactive');
-					}
-					$('.search').animate({width:startSearchWidth},time);
-					$('.search .textInput').animate({width:startSearchInputWidth},time);
-				})
-			})
-	</script>
-	</form>
-			</div> -->
 			<div class="auth">
 			<?php if(!$this->user->isGuest) : ?>
 					<?php echo CHtml::link('<img src="/images/logout.png" alt="Выйти" />',Array('/site/logout'),Array('title'=>'Выйти')); ?>
